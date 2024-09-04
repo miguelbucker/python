@@ -1,16 +1,17 @@
 # Variaveis de Preço
-p1 = 100
-p2 = 200
-p3 = 300
+p1 = [100,200,300]
 
-t = p1 + p2 + p3
+# Definindo a variavel total atraves da função soma
+total = sum(p1)
 
-desc = 0
-if t > 500:
-    desc = t * 0.1
+# Definindo o desconto quando o valor total é maior do que 500
+desconto = 0
+if total > 500:
+    desconto = total * 0.1
 
-r = t - desc
+# Calculando o resultado subtraindo o desconto do valor total
+resultado = total - desconto
 
-print("Total antes do desconto:", t)
-print("Desconto aplicado:", desc)
-print("Total com desconto:", r)
+print(f"Total antes do desconto: {total}")
+print(f"Desconto aplicado: {desconto}")
+print(f"Total com desconto: {resultado}")
