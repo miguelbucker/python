@@ -32,6 +32,16 @@ pessoa = {"nome": "Fernanda", "idade": 48}
 listaPessoas.append(pessoa)
 print(listaPessoas)
 
+a = {1,2,3}
+b = {3,4,5}
+
+print(a & b)
+print(a | b)
+print(a - b)
+
+conjunto = {1,2,3,4,5}
+print(3 in conjunto)
+print(6 in conjunto)
 
 
 
